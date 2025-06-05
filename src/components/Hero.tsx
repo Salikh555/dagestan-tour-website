@@ -3,7 +3,7 @@ import Icon from "@/components/ui/icon";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-emerald-800 via-teal-700 to-cyan-600 text-white overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-emerald-800 via-teal-700 to-cyan-600 text-white overflow-hidden pt-16">
       {/* Background pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 w-32 h-32 border border-white/20 rounded-full"></div>
@@ -12,21 +12,27 @@ const Hero = () => {
       </div>
 
       <div className="container mx-auto px-6 text-center relative z-10">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-            Открой для себя
-            <span className="block text-amber-300">Дагестан</span>
+            Откройте красоты
+            <span className="block text-amber-300">Дагестана</span>
           </h1>
 
-          <p className="text-xl md:text-2xl mb-8 text-gray-200 leading-relaxed animate-fade-in">
-            Незабываемые туры по самым красивым местам Кавказа. Горные вершины,
-            древние села и гостеприимство горцев ждут вас!
+          <p className="text-xl md:text-2xl mb-8 text-gray-200 leading-relaxed animate-fade-in max-w-4xl mx-auto">
+            Путешествуйте по живописным горам, древним крепостям и национальным
+            паркам. Откройте для себя уникальную культуру и традиции народов
+            Кавказа
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 animate-fade-in">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16 animate-fade-in">
             <Button
               size="lg"
-              className="bg-amber-500 hover:bg-amber-600 text-black font-semibold px-8 py-4 text-lg rounded-full"
+              onClick={() =>
+                document
+                  .getElementById("tours")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+              className="bg-amber-500 hover:bg-amber-600 text-black font-semibold px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all"
             >
               <Icon name="Mountain" className="mr-2" />
               Выбрать тур
@@ -34,7 +40,12 @@ const Hero = () => {
             <Button
               variant="outline"
               size="lg"
-              className="border-white text-white hover:bg-white hover:text-emerald-800 px-8 py-4 text-lg rounded-full"
+              onClick={() =>
+                document
+                  .getElementById("contact")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+              className="border-2 border-white text-white hover:bg-white hover:text-emerald-800 px-8 py-4 text-lg rounded-full shadow-lg hover:shadow-xl transition-all"
             >
               <Icon name="Phone" className="mr-2" />
               Связаться с нами
