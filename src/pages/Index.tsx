@@ -22,49 +22,61 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md shadow-lg border-b border-gray-100">
         <div className="container mx-auto px-6">
-          <div className="flex items-center justify-between h-16">
-            <div className="flex items-center space-x-2">
-              <Icon name="Mountain" className="w-8 h-8 text-emerald-600" />
-              <span className="font-bold text-xl text-gray-900">
-                Дагестан Туры
-              </span>
+          <div className="flex items-center justify-between h-18">
+            <div className="flex items-center space-x-3">
+              <div className="bg-gradient-to-r from-amber-500 to-orange-500 p-2 rounded-xl">
+                <Icon name="Mountain" className="w-8 h-8 text-white" />
+              </div>
+              <div>
+                <div className="font-bold text-xl text-gray-900">
+                  ДАГЕСТАН ТУРЫ
+                </div>
+                <div className="text-xs text-gray-500 -mt-1">
+                  Туристическое агентство
+                </div>
+              </div>
             </div>
 
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-8">
               <button
                 onClick={() => scrollToSection("hero")}
-                className="text-gray-700 hover:text-emerald-600 transition-colors"
+                className="text-gray-700 hover:text-amber-600 transition-colors font-medium py-2 relative group"
               >
                 Главная
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-500 transition-all duration-300 group-hover:w-full"></span>
               </button>
               <button
                 onClick={() => scrollToSection("tours")}
-                className="text-gray-700 hover:text-emerald-600 transition-colors"
+                className="text-gray-700 hover:text-amber-600 transition-colors font-medium py-2 relative group"
               >
                 Туры
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-500 transition-all duration-300 group-hover:w-full"></span>
               </button>
               <button
                 onClick={() => scrollToSection("gallery")}
-                className="text-gray-700 hover:text-emerald-600 transition-colors"
+                className="text-gray-700 hover:text-amber-600 transition-colors font-medium py-2 relative group"
               >
                 Галерея
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-500 transition-all duration-300 group-hover:w-full"></span>
               </button>
               <button
                 onClick={() => scrollToSection("about")}
-                className="text-gray-700 hover:text-emerald-600 transition-colors"
+                className="text-gray-700 hover:text-amber-600 transition-colors font-medium py-2 relative group"
               >
                 О нас
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-500 transition-all duration-300 group-hover:w-full"></span>
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
-                className="text-gray-700 hover:text-emerald-600 transition-colors"
+                className="text-gray-700 hover:text-amber-600 transition-colors font-medium py-2 relative group"
               >
                 Контакты
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-amber-500 transition-all duration-300 group-hover:w-full"></span>
               </button>
-              <Button className="bg-emerald-600 hover:bg-emerald-700">
+              <Button className="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-black font-semibold border-0 shadow-lg hover:shadow-xl transition-all duration-300 rounded-full px-6">
                 <Icon name="Phone" className="w-4 h-4 mr-2" />
                 Заказать тур
               </Button>

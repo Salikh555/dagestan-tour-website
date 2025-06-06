@@ -13,82 +13,155 @@ const Tours = () => {
   const tours = [
     {
       id: 1,
-      title: "Махачкала - Дербент",
+      title: "Сулакский каньон + Чиркейское водохранилище",
       description:
-        "Исторический тур по древнейшему городу России и столице республики",
-      duration: "2 дня",
-      price: "8 500 ₽",
-      image:
-        "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop",
-      highlights: ["Крепость Нарын-Кала", "Джума-мечеть", "Каспийское море"],
-    },
-    {
-      id: 2,
-      title: "Гунибское плато",
-      description: "Восхождение на историческое плато с потрясающими видами",
+        "Путешествие к одному из самых глубоких каньонов мира и живописному водохранилищу",
       duration: "1 день",
-      price: "6 000 ₽",
-      image:
-        "https://images.unsplash.com/photo-1464822759844-d150baec3013?w=800&h=600&fit=crop",
-      highlights: ["Гунибская крепость", "Горные пейзажи", "Аварские села"],
-    },
-    {
-      id: 3,
-      title: "Сулакский каньон",
-      description: "Поездка к одному из самых глубоких каньонов в мире",
-      duration: "1 день",
-      price: "5 500 ₽",
-      image:
-        "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop",
-      highlights: ["Глубина 1920м", "Катание на катере", "Смотровые площадки"],
-    },
-    {
-      id: 4,
-      title: "Большой тур по Дагестану",
-      description: "Полное погружение в культуру и природу республики",
-      duration: "7 дней",
-      price: "25 000 ₽",
+      price: "от 4 500 ₽",
       image:
         "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop",
       highlights: [
-        "Все основные достопримечательности",
-        "Этнические села",
-        "Национальная кухня",
+        "Глубина каньона 1920м",
+        "Катание на катере",
+        "Смотровые площадки",
+        "Фотосессия",
       ],
+      popular: true,
+    },
+    {
+      id: 2,
+      title: "Древний Дербент",
+      description:
+        "Исследование самого древнего города России с уникальной архитектурой",
+      duration: "1 день",
+      price: "от 3 800 ₽",
+      image:
+        "https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=800&h=600&fit=crop",
+      highlights: [
+        "Крепость Нарын-Кала",
+        "Джума-мечеть VIII века",
+        "Музей ковра",
+        "Дегустация вин",
+      ],
+    },
+    {
+      id: 3,
+      title: "Гунибское плато + аварские села",
+      description:
+        "Восхождение на историческое плато с посещением традиционных горных сел",
+      duration: "1 день",
+      price: "от 5 200 ₽",
+      image:
+        "https://images.unsplash.com/photo-1464822759844-d150baec3013?w=800&h=600&fit=crop",
+      highlights: [
+        "Гунибская крепость",
+        "Панорамные виды",
+        "Этнические села",
+        "Мастер-классы",
+      ],
+    },
+    {
+      id: 4,
+      title: "Кубачи - село мастеров",
+      description:
+        "Знакомство с уникальными традициями златокузнецов высокогорного села",
+      duration: "1 день",
+      price: "от 4 800 ₽",
+      image:
+        "https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=800&h=600&fit=crop",
+      highlights: [
+        "Музей златокузнецов",
+        "Мастер-классы",
+        "Традиционные промыслы",
+        "Горные пейзажи",
+      ],
+    },
+    {
+      id: 5,
+      title: "Махачкала - Каспийское море",
+      description:
+        "Обзорная экскурсия по столице с отдыхом на берегу Каспийского моря",
+      duration: "1 день",
+      price: "от 3 200 ₽",
+      image:
+        "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop",
+      highlights: [
+        "Центральная мечеть",
+        "Набережная",
+        "Местная кухня",
+        "Пляжный отдых",
+      ],
+    },
+    {
+      id: 6,
+      title: "Большой тур по Дагестану",
+      description: "Комплексное путешествие по всем знаковым местам республики",
+      duration: "3-7 дней",
+      price: "от 18 000 ₽",
+      image:
+        "https://images.unsplash.com/photo-1464822759844-d150baec3013?w=800&h=600&fit=crop",
+      highlights: [
+        "Все достопримечательности",
+        "Проживание",
+        "Питание",
+        "Транспорт",
+      ],
+      featured: true,
     },
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
+    <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Популярные туры
+        <div className="text-center mb-20">
+          <div className="mb-4">
+            <span className="inline-block px-6 py-2 bg-amber-100 text-amber-700 rounded-full text-sm font-medium tracking-wider uppercase">
+              Наши туры
+            </span>
+          </div>
+          <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+            Популярные маршруты
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Выберите идеальный маршрут для вашего путешествия по Дагестану
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Выберите идеальное путешествие по красотам Дагестана. Каждый тур
+            создан с любовью к родному краю
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {tours.map((tour) => (
             <Card
               key={tour.id}
-              className="group hover:shadow-2xl transition-all duration-300 border-0 shadow-lg hover:-translate-y-2 bg-white"
+              className={`group hover:shadow-2xl transition-all duration-500 border-0 shadow-lg hover:-translate-y-3 bg-white relative overflow-hidden ${
+                tour.featured ? "ring-2 ring-amber-400 scale-105" : ""
+              }`}
             >
-              <div className="relative overflow-hidden rounded-t-lg">
+              {tour.popular && (
+                <div className="absolute top-4 left-4 z-20 bg-gradient-to-r from-red-500 to-pink-500 text-white px-3 py-1 rounded-full text-sm font-bold shadow-lg">
+                  🔥 Популярный
+                </div>
+              )}
+
+              {tour.featured && (
+                <div className="absolute top-4 left-4 z-20 bg-gradient-to-r from-amber-500 to-orange-500 text-black px-3 py-1 rounded-full text-sm font-bold shadow-lg">
+                  ⭐ Рекомендуем
+                </div>
+              )}
+
+              <div className="relative overflow-hidden">
                 <img
                   src={tour.image}
                   alt={tour.title}
-                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                  className="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-700"
                 />
-                <div className="absolute top-4 right-4 bg-emerald-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+                <div className="absolute bottom-4 right-4 bg-slate-900/80 backdrop-blur-sm text-white px-3 py-1 rounded-full text-sm font-semibold">
                   {tour.duration}
                 </div>
               </div>
 
               <CardHeader className="pb-4">
-                <CardTitle className="text-xl font-bold text-gray-900 group-hover:text-emerald-600 transition-colors">
+                <CardTitle className="text-xl font-bold text-gray-900 group-hover:text-amber-600 transition-colors leading-tight">
                   {tour.title}
                 </CardTitle>
                 <CardDescription className="text-gray-600 leading-relaxed">
@@ -96,8 +169,8 @@ const Tours = () => {
                 </CardDescription>
               </CardHeader>
 
-              <CardContent className="pb-4">
-                <div className="space-y-2">
+              <CardContent className="pb-6">
+                <div className="space-y-3">
                   {tour.highlights.map((highlight, index) => (
                     <div
                       key={index}
@@ -105,7 +178,7 @@ const Tours = () => {
                     >
                       <Icon
                         name="Check"
-                        className="w-4 h-4 text-emerald-500 mr-2 flex-shrink-0"
+                        className="w-4 h-4 text-green-500 mr-3 flex-shrink-0"
                       />
                       {highlight}
                     </div>
@@ -115,10 +188,10 @@ const Tours = () => {
 
               <CardFooter className="pt-4 border-t border-gray-100">
                 <div className="w-full flex items-center justify-between">
-                  <div className="text-2xl font-bold text-emerald-600">
+                  <div className="text-2xl font-bold text-slate-900">
                     {tour.price}
                   </div>
-                  <Button className="bg-emerald-600 hover:bg-emerald-700 text-white">
+                  <Button className="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-black font-semibold border-0 shadow-lg hover:shadow-xl transition-all duration-300">
                     Подробнее
                   </Button>
                 </div>
@@ -127,14 +200,14 @@ const Tours = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        <div className="text-center">
           <Button
             size="lg"
             variant="outline"
-            className="border-emerald-600 text-emerald-600 hover:bg-emerald-600 hover:text-white px-8 py-4"
+            className="border-2 border-amber-500 text-amber-600 hover:bg-amber-500 hover:text-white px-10 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
           >
             Смотреть все туры
-            <Icon name="ArrowRight" className="ml-2 w-5 h-5" />
+            <Icon name="ArrowRight" className="ml-3 w-5 h-5" />
           </Button>
         </div>
       </div>
