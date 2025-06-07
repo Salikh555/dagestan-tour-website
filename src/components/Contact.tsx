@@ -29,7 +29,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-b from-emerald-50 to-white">
+    <section className="py-20 bg-gradient-to-b from-blue-50 to-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -51,8 +51,8 @@ const Contact = () => {
               </CardHeader>
               <CardContent className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="bg-emerald-100 p-3 rounded-full">
-                    <Icon name="Phone" className="w-6 h-6 text-emerald-600" />
+                  <div className="bg-blue-100 p-3 rounded-full">
+                    <Icon name="Phone" className="w-6 h-6 text-blue-600" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900">Телефон</h3>
@@ -62,8 +62,8 @@ const Contact = () => {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="bg-emerald-100 p-3 rounded-full">
-                    <Icon name="Mail" className="w-6 h-6 text-emerald-600" />
+                  <div className="bg-blue-100 p-3 rounded-full">
+                    <Icon name="Mail" className="w-6 h-6 text-blue-600" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900">Email</h3>

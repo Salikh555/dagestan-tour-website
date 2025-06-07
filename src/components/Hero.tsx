@@ -3,7 +3,7 @@ import Icon from "@/components/ui/icon";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 text-white overflow-hidden pt-16">
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-900 via-slate-800 to-gray-900 text-white overflow-hidden pt-20">
       {/* Background overlay */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -12,7 +12,7 @@ const Hero = () => {
             "url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&h=1080&fit=crop')",
         }}
       />
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-900/90 via-blue-900/85 to-slate-800/90" />
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-900/85 via-slate-800/90 to-gray-900/85" />
 
       {/* Decorative elements */}
       <div className="absolute inset-0 opacity-20">
@@ -24,14 +24,14 @@ const Hero = () => {
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-6xl mx-auto">
           <div className="mb-6">
-            <span className="inline-block px-6 py-2 bg-amber-500/20 backdrop-blur-sm border border-amber-400/30 rounded-full text-amber-300 text-sm font-medium tracking-wider uppercase">
+            <span className="inline-block px-8 py-3 bg-blue-500/20 backdrop-blur-sm border border-blue-400/30 rounded-full text-blue-200 text-sm font-medium tracking-wider uppercase">
               Туристическое агентство
             </span>
           </div>
 
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-8 animate-fade-in leading-tight">
             <span className="block text-white">Туры по</span>
-            <span className="block bg-gradient-to-r from-amber-400 via-orange-400 to-red-400 bg-clip-text text-transparent">
+            <span className="block bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-300 bg-clip-text text-transparent">
               Дагестану
             </span>
           </h1>
@@ -50,7 +50,7 @@ const Hero = () => {
                   .getElementById("tours")
                   ?.scrollIntoView({ behavior: "smooth" })
               }
-              className="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-black font-bold px-12 py-6 text-xl rounded-full shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 border-0"
+              className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-bold px-12 py-6 text-xl rounded-xl shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 border-0"
             >
               <Icon name="Mountain" className="mr-3 w-6 h-6" />
               Выбрать тур
@@ -63,7 +63,7 @@ const Hero = () => {
                   .getElementById("contact")
                   ?.scrollIntoView({ behavior: "smooth" })
               }
-              className="border-2 border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-black px-12 py-6 text-xl rounded-full shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 font-semibold bg-transparent backdrop-blur-sm"
+              className="border-2 border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white px-12 py-6 text-xl rounded-xl shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300 font-semibold bg-transparent backdrop-blur-sm"
             >
               <Icon name="Phone" className="mr-3 w-6 h-6" />
               Связаться
@@ -76,7 +76,7 @@ const Hero = () => {
               <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300 group-hover:scale-105">
                 <Icon
                   name="Users"
-                  className="mx-auto mb-4 w-14 h-14 text-amber-400"
+                  className="mx-auto mb-4 w-14 h-14 text-blue-400"
                 />
                 <div className="text-4xl font-bold mb-2 text-white">1000+</div>
                 <p className="text-gray-300 text-lg">Довольных туристов</p>
@@ -87,7 +87,7 @@ const Hero = () => {
               <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300 group-hover:scale-105">
                 <Icon
                   name="MapPin"
-                  className="mx-auto mb-4 w-14 h-14 text-amber-400"
+                  className="mx-auto mb-4 w-14 h-14 text-blue-400"
                 />
                 <div className="text-4xl font-bold mb-2 text-white">25+</div>
                 <p className="text-gray-300 text-lg">Уникальных маршрутов</p>
@@ -98,7 +98,7 @@ const Hero = () => {
               <div className="bg-white/10 backdrop-blur-md rounded-2xl p-8 border border-white/20 hover:bg-white/15 transition-all duration-300 group-hover:scale-105">
                 <Icon
                   name="Award"
-                  className="mx-auto mb-4 w-14 h-14 text-amber-400"
+                  className="mx-auto mb-4 w-14 h-14 text-blue-400"
                 />
                 <div className="text-4xl font-bold mb-2 text-white">7</div>
                 <p className="text-gray-300 text-lg">Лет опыта</p>

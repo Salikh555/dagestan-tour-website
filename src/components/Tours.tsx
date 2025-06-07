@@ -115,7 +115,7 @@ const Tours = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-20">
           <div className="mb-4">
-            <span className="inline-block px-6 py-2 bg-amber-100 text-amber-700 rounded-full text-sm font-medium tracking-wider uppercase">
+            <span className="inline-block px-6 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium tracking-wider uppercase">
               Наши туры
             </span>
           </div>
@@ -191,7 +191,7 @@ const Tours = () => {
                   <div className="text-2xl font-bold text-slate-900">
                     {tour.price}
                   </div>
-                  <Button className="bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-black font-semibold border-0 shadow-lg hover:shadow-xl transition-all duration-300">
+                  <Button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold border-0 shadow-lg hover:shadow-xl transition-all duration-300 rounded-lg">
                     Подробнее
                   </Button>
                 </div>
@@ -204,7 +204,7 @@ const Tours = () => {
           <Button
             size="lg"
             variant="outline"
-            className="border-2 border-amber-500 text-amber-600 hover:bg-amber-500 hover:text-white px-10 py-4 text-lg font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+            className="border-2 border-blue-500 text-blue-600 hover:bg-blue-500 hover:text-white px-10 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
           >
             Смотреть все туры
             <Icon name="ArrowRight" className="ml-3 w-5 h-5" />

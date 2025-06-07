@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
-            <h3 className="text-2xl font-bold mb-4 text-amber-300">
+            <h3 className="text-2xl font-bold mb-4 text-blue-300">
               Туры по Дагестану
             </h3>
             <p className="text-gray-300 mb-6 leading-relaxed">
@@ -15,13 +15,13 @@ const Footer = () => {
               Незабываемые путешествия по самым красивым уголкам Кавказа.
             </p>
             <div className="flex space-x-4">
-              <div className="bg-emerald-600 p-2 rounded-full hover:bg-emerald-700 transition-colors cursor-pointer">
+              <div className="bg-blue-600 p-2 rounded-full hover:bg-blue-700 transition-colors cursor-pointer">
                 <Icon name="Instagram" className="w-5 h-5" />
               </div>
-              <div className="bg-emerald-600 p-2 rounded-full hover:bg-emerald-700 transition-colors cursor-pointer">
+              <div className="bg-blue-600 p-2 rounded-full hover:bg-blue-700 transition-colors cursor-pointer">
                 <Icon name="Phone" className="w-5 h-5" />
               </div>
-              <div className="bg-emerald-600 p-2 rounded-full hover:bg-emerald-700 transition-colors cursor-pointer">
+              <div className="bg-blue-600 p-2 rounded-full hover:bg-blue-700 transition-colors cursor-pointer">
                 <Icon name="Mail" className="w-5 h-5" />
               </div>
             </div>
@@ -29,7 +29,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-amber-300">
+            <h4 className="text-lg font-semibold mb-4 text-blue-300">
               Быстрые ссылки
             </h4>
             <ul className="space-y-2">
@@ -78,7 +78,7 @@ const Footer = () => {
 
           {/* Popular Tours */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-amber-300">
+            <h4 className="text-lg font-semibold mb-4 text-blue-300">
               Популярные туры
             </h4>
             <ul className="space-y-2">
